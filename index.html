@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="colors">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Screen Saver - Clock</title>
+</head>
+<body>
+  <div class="root">
+    <div class="wrapper">
+      <div class="container">
+        
+        <div class="clock">
+          <div class="clock-hand-h"></div>
+          <div class="clock-hand-m"></div>
+        </div>
+
+        <div class="time-and-date">
+          <span class="time">
+            <div class="hours" id="hours"></div>
+            <div class="minutes" id="minutes"></div>
+            <div class="seconds" id="seconds"></div>
+          </span>
+          <span class="date">
+            <div id="day"></div>
+            <div id="month">,</div>
+            <div id="year"></div>
+          </span>
+        </div>   
+
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
