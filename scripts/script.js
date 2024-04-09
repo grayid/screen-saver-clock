@@ -48,7 +48,7 @@ setInterval(() => {
   seconds = now.getSeconds().toString().padStart(2, '0');
 
   const day = now.getDate();
-  const month = monthNames[now.getMonth()] + ",";
+  const month = MONTH_NAMES[now.getMonth()] + ",";
   const year = now.getFullYear();
 
   updateDateAndTime();
