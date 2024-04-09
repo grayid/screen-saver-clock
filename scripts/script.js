@@ -1,3 +1,5 @@
+import { MONTH_NAMES }  from "./constant.js"
+
 // Clock 
 const clockHandH = document.querySelector('.clock-hand-h');
 const clockHandM = document.querySelector('.clock-hand-m');
@@ -23,11 +25,8 @@ let hours = now.getHours().toString().padStart(2, '0');
 let minutes = now.getMinutes().toString().padStart(2, '0');
 let seconds = now.getSeconds().toString().padStart(2, '0');
 
-import { MONTH_NAMES }  from "./constant.js"
-
 const day = now.getDate();
-const monthNames = MONTH_NAMES;
-const month = monthNames[now.getMonth()] + ",";
+const month = MONTH_NAMES[now.getMonth()] + ",";
 const year = now.getFullYear();
 
 function updateDateAndTime() {
