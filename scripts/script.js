@@ -41,15 +41,15 @@ function updateDateAndTime() {
 updateDateAndTime();
 
 setInterval(() => {
-  const now = new Date();
+  const nowInInterval = new Date();
 
-  hours = now.getHours().toString().padStart(2, '0');
-  minutes = now.getMinutes().toString().padStart(2, '0');
-  seconds = now.getSeconds().toString().padStart(2, '0');
+  hours = nowInInterval.getHours().toString().padStart(2, '0');
+  minutes = nowInInterval.getMinutes().toString().padStart(2, '0');
+  seconds = nowInInterval.getSeconds().toString().padStart(2, '0');
 
-  const day = now.getDate();
-  const month = MONTH_NAMES[now.getMonth()] + ",";
-  const year = now.getFullYear();
+  const day = nowInInterval.getDate();
+  const month = MONTH_NAMES[nowInInterval.getMonth()] + ",";
+  const year = nowInInterval.getFullYear();
 
   updateDateAndTime();
 }, 1000);
